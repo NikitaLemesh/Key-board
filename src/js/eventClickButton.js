@@ -9,7 +9,7 @@ function changeButtonColor(event) {
   target.classList.add('button-blue-color');
   setTimeout(() => {
     target.classList.remove('button-blue-color');
-  }, 100);
+  }, 500);
 }
 
 export default function clickButton(event) {

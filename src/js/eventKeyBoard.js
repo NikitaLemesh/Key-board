@@ -8,7 +8,7 @@ export default function keyDownClick(event) {
       itemId.classList.add('button-blue-color');
       setTimeout(() => {
         itemId.classList.remove('button-blue-color');
-      }, 100);
+      }, 500);
     }
   });
 }

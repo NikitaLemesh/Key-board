@@ -3,12 +3,15 @@
     padding: 0;
     margin: 0;
 }
+body{
+    background-color: rgba(3, 47, 55, 0.8);
+    background-size: auto;
+}
 
 .wrapper {
     display: flex;
     align-items: center;
     flex-direction: column;
-    width: 900px;
     margin: 0 auto;
 }
 
@@ -16,7 +19,9 @@
     width: 900px;
     height: 200px;
     margin-bottom: 30px;
-    margin-top: 20px;
+    margin-top: 60px;
+    font-size: 18px;
+    color: rgba(5, 125, 133, 1);
 }
 
 .list-of-buttons {
@@ -24,6 +29,10 @@
     flex-direction: row;
     justify-content: space-between;
     gap: 5px;
+    width: 930px;
+    background-color: rgba(10, 151, 179, 0.8);
+    padding: 15px;
+    border-radius: 5px;
     flex-wrap: wrap;
 }
 
@@ -32,11 +41,16 @@
 }
 
 .key-board-button {
-    background-color: rgb(231, 14, 14);
+    background-color: rgba(19, 191, 226, 1);
     font-size: 15px;
     width: 50px;
     height: 50px;
     border-radius: 3px;
+    border: 1px solid rgba(3, 47, 55, 1);
+}
+
+.key-board-button:hover {
+    background-color: rgba(47, 210, 153, 1);
 }
 
 .upper-item {
@@ -48,7 +62,8 @@
 }
 
 .button-blue-color {
-    background-color: blue;
+    background-color: rgba(5, 125, 133, 1);
+    border-radius: 20px;
 }
 
 .caps-lock, .enter {
@@ -75,8 +90,10 @@
     font-size: 20px;
     margin-top: 20px;
     margin-bottom: 20px;
+    color: rgba(19, 191, 226, 1);
 }
 
 .description-language {
-    font-size: 20px;
+    font-size: 22px;
+    color: rgba(19, 191, 226, 1);
 }

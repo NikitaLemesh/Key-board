@@ -5,7 +5,7 @@ const arraySpecialButtons = ['Backspace', 'Tab', 'Delete', 'CapsLock', 'Enter',
   'Space', 'AltRight', 'ControlRight', 'ArrowLeft', 'ArrowDown', 'ArrowRight',
 ];
 export function createKeyBoard() {
-  const body = document.querySelector('.body');
+  const { body } = document;
   const keyBoardWrapper = document.createElement('section');
   keyBoardWrapper.classList.add('wrapper');
   body.append(keyBoardWrapper);

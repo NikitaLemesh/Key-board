@@ -1,13 +1,17 @@
 import KEYBOARD_BUTTONS from './constants';
+import { checkSessionStorage } from './dataStorage';
 
 export default function keyDownClick(event) {
   KEYBOARD_BUTTONS.forEach((item) => {
     const buttonCode = event.code;
     if (buttonCode === item.id) {
       const itemId = document.getElementById(item.id);
-      itemId.classList.add('button-blue-color');
+      if (buttonCode === 'CapsLock') {
+        checkSessionStorage();
+      }
+      itemId.classList.add('key-board-button-hover');
       setTimeout(() => {
-        itemId.classList.remove('button-blue-color');
+        itemId.classList.remove('key-board-button-hover');
       }, 500);
     }
   });

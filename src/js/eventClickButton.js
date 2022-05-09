@@ -6,9 +6,11 @@ import {
 
 function changeButtonColor(event) {
   const { target } = event;
-  target.classList.add('button-blue-color');
+  target.classList.add('key-board-button-hover');
+  target.classList.remove('key-board-button-color');
   setTimeout(() => {
-    target.classList.remove('button-blue-color');
+    target.classList.add('key-board-button-color');
+    target.classList.remove('key-board-button-hover');
   }, 500);
 }
 

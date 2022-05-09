@@ -28,6 +28,7 @@ export function createKeyBoard() {
 
     const keyBoardButton = document.createElement('button');
     keyBoardButton.classList.add('key-board-button');
+    keyBoardButton.classList.add('key-board-button-color');
     keyBoardButton.setAttribute('type', 'button');
     keyBoardButton.setAttribute('id', item.id);
     if (arraySpecialButtons.includes(item.id)) {

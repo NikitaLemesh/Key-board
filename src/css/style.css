@@ -49,7 +49,7 @@ body{
     border: 1px solid rgba(3, 47, 55, 1);
 }
 
-.key-board-button:hover {
+.key-board-button-color:hover {
     background-color: rgba(47, 210, 153, 1);
 }
 
@@ -61,7 +61,7 @@ body{
     width: 440px;
 }
 
-.button-blue-color {
+.key-board-button-hover {
     background-color: rgba(5, 125, 133, 1);
     border-radius: 20px;
 }
